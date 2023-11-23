@@ -1,0 +1,109 @@
+body {
+  background: linear-gradient(
+    to right,
+    pink,
+    salmon,
+    pink
+  );
+  background-size: 200% 200%;
+}
+
+@keyframes body {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+
+    .center {
+      
+      margin: 0 auto;
+      
+    }
+
+    .creativity {
+      font-family: futura;
+      font-style: italic;
+      width:100%;
+      margin: 0 auto;
+      text-align: center;
+      color:#313131;
+      font-size:45px;
+      font-weight: bold;
+      position: absolute;
+      -webkit-animation:colorchange 20s infinite alternate; 
+    }
+
+    @-webkit-keyframes colorchange {
+      0% {
+        color: blue;
+      }
+      
+      10% {
+        color: white;
+      }
+      
+      20% {
+        color: #1abc9c;
+      }
+      
+      30% {
+        color: #d35400;
+      }
+      
+      40% {
+        color: blue;
+      }
+      
+      50% {
+        color: #34495e;
+      }
+      
+      60% {
+        color: blue;
+      }
+      
+      70% {
+        color: #2980b9;
+      }
+      80% {
+        color: white;
+      }
+      
+      90% {
+        color: #2980b9;
+      }
+      
+      100% {
+        color: pink;
+      }
+    }
+
+.row {
+  width: 100%;
+  text-align: center;
+}
+
+.columns {
+  width: 25%;
+  min-width: 280px;
+  vertical-align: top;
+  margin-bottom: 10px;
+  display: inline-block;
+  color: grey;
+  padding: 2rem;
+ }
+.align-right {
+  text-align: right;
+}
+@media screen and (max-width: 680px) {
+  .columns {
+    width: 100%; 
+  }
+}
