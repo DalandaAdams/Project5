@@ -1,0 +1,104 @@
+body {
+  background: linear-gradient(
+    to right,
+    pink,
+    salmon,
+    pink
+  );
+  background-size: 200% 200%;
+}
+
+@keyframes body {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.bio{
+  width:50vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  opasity: 0;
+  animation: animateBio 3s ease forwards;
+}
+
+@keyframes animateBio{
+  to{
+    opacity: 1;
+  }
+}
+
+.bio .container {
+  margin-left: 3rem;
+  width: 36rem;
+}
+
+.bio .container h1{
+  font-size: 3rem;
+}
+.left-side{
+  float: left;
+  width: 25%;
+  padding: 1%;
+}
+
+.bround{
+  width: 70rem;
+  height: 70rem;
+  background: teal;
+  border-radius: 50%;
+  box-shadow: var(--box-shadow);
+  position: absolute;
+  top: 50%;
+  right: -20rem;
+  transform: translateY(-50%);
+  opacity: 0;
+  animation: animateBround 3s ease forwards;
+}
+
+@keyframes animateBround{
+  to{
+    opacity: 1;
+  }
+}
+
+.mround{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 38rem;
+  height: 38rem;
+  background: aquamarine;
+  border-radius: 50%;
+  box-shadow: var(--box-shadow);
+  animation: animateMround 10s 5s linear forwards infinite;
+}
+
+@keyframes animateMround{
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.mround .logo{
+  width: 26rem;
+  height: 26rem;
+  position: absolute;
+  top: 53%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.image1{
+  width: 100%;
+}
